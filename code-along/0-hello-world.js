@@ -6,3 +6,5 @@ let message = `hello world!`
 
 // Write the message I have stored in memory to the JavaScript Console in Chrome.
 console.log(message)
+
+// Testing the comment keyboard shortcut

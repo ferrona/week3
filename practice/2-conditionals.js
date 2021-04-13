@@ -6,8 +6,19 @@ function getRandomInt(max) {
 
 // Goal: Play a simple game of craps
 // - Begin with the recipe (algorithm) and code from the first practice
+let die1 = getRandomInt(6)
+let die2 = getRandomInt(6)
+let total = die1 + die2
+console.log(`The Total is ${total}`)
 // - Implement the (basic) rules of craps:
 //   - If the total of the two dice is 7 or 11, the player wins
+if (total == 7 || total == 11) {
+  console.log(`YOU WIN!`)
+} else if (total == 2 || total == 3 || total == 12) {
+  console.log(`YOU LOSE`)
+} else {
+  console.log(`The Point is ${total}`)
+}
 //   - If the total of the two dice is 2, 3, or 12, the player loses
 //   - If the total is anything else, the "point" is set, e.g. "the point is 6"
 
